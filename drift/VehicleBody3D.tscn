@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d3pyptuuy3bhj"]
+
+[node name="VehicleBody3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+
+[node name="VehicleWheel3D FL" type="VehicleWheel3D" parent="."]
+
+[node name="VehicleWheel3D FR" type="VehicleWheel3D" parent="."]
+
+[node name="VehicleWheel3D RL" type="VehicleWheel3D" parent="."]
+
+[node name="VehicleWheel3D RR" type="VehicleWheel3D" parent="."]
+
+[node name="Node3D (SkidMarks)" type="Node3D" parent="."]

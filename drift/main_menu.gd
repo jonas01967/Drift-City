@@ -1,4 +1,4 @@
-extends Control
+extends Node3D
 
 func _ready():
 	$VBoxContainer/Start.pressed.connect(_on_start_pressed)
@@ -9,7 +9,7 @@ func _on_start_pressed():
 	print("Spiel starten (hier später Level laden)")
 
 func _on_modi_pressed():
-	get_tree().change_scene_to_file("res://ModeMenu.tscn")
+	get_tree().change_scene_to_file("res://mode_menu.tscn")
 
 func _on_beenden_pressed():
 	get_tree().quit()

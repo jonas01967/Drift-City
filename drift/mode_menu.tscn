@@ -9,14 +9,22 @@ script = ExtResource("1_5hmpi")
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="freies Spiel" type="Button" parent="VBoxContainer"]
+[node name="freies_Spiel" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(300, 60)
 layout_mode = 2
+text = "freies Spiel"
 
 [node name="Timer" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(300, 60)
 layout_mode = 2
+text = "Timer"
 
 [node name="Punkte" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(300, 60)
 layout_mode = 2
+text = "Punkte"
 
 [node name="Zurück" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(300, 60)
 layout_mode = 2
+text = "Zurück"
