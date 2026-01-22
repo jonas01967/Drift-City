@@ -14,3 +14,7 @@ config/name="Drift"
 run/main_scene="uid://esgbk5ssudj4"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[filesystem]
+
+import/blender/enabled=false
