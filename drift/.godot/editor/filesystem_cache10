@@ -1,7 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1768483574
+::res://::1769087341
 icon.svg::CompressedTexture2D::4158641865785853992::1768483441::1768483441::1::::<><><>0<>0<>a5e0216c57fd57882228ef115f2d0e25<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main_menu.gd::GDScript::8268347668547914605::1768483441::0::1::::<>Control<><>0<>0<><>::
-main_menu.tscn::PackedScene::318280834296024667::1768483441::0::1::::<><><>0<>0<><>::uid://dp2iqiwp43pmj::::res://main_menu.gd
-mode_menu.gd::GDScript::3760912709838027284::1768483441::0::1::::<>Control<><>0<>0<><>::
-mode_menu.tscn::PackedScene::5237077530085390452::1768483441::0::1::::<><><>0<>0<><>::uid://btt2xhm6p08ds::::res://mode_menu.gd
+main_menu.gd::GDScript::8268347668547914605::1768484455::0::1::::<>Node3D<><>0<>0<><>::
+main_menu.tscn::PackedScene::318280834296024667::1768487395::0::1::::<><><>0<>0<><>::uid://dp2iqiwp43pmj::::res://main_menu.gd
+mode_menu.gd::GDScript::3760912709838027284::1768485689::0::1::::<>Node3D<><>0<>0<><>::
+mode_menu.tscn::PackedScene::5237077530085390452::1768487398::0::1::::<><><>0<>0<><>::uid://btt2xhm6p08ds::::res://mode_menu.gd
+node_3d_(skid_marks).gd::GDScript::2884649287589070190::1768487026::0::1::::<>Node3D<><>0<>0<><>::
+VehicleBody3D.tscn::PackedScene::9157000363771698651::1768487396::0::1::::<><><>0<>0<><>::
+vehicle_body_3d.gd::GDScript::3774719404719522298::1768487027::0::1::::<>VehicleBody3D<><>0<>0<><>::
