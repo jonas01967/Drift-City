@@ -7,6 +7,7 @@ func _ready():
 
 func _on_start_pressed():
 	print("Spiel starten (hier später Level laden)")
+	get_tree().change_scene_to_file("res://VehicleBody3D.tscn")
 
 func _on_modi_pressed():
 	get_tree().change_scene_to_file("res://mode_menu.tscn")

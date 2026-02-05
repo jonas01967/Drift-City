@@ -1,34 +1,39 @@
 [gd_scene load_steps=6 format=3 uid="uid://d3pyptuuy3bhj"]
 
-[ext_resource type="ArrayMesh" uid="uid://c30is7rhmg62b" path="res://realistic_lowpoly_sedan_Cube.res" id="1_3bxkr"]
-[ext_resource type="ArrayMesh" uid="uid://c1q6a6uiwjmys" path="res://realistic_lowpoly_sedan_Cylinder_002.res" id="2_dcub4"]
-[ext_resource type="ArrayMesh" uid="uid://bumqxlrycmgq4" path="res://realistic_lowpoly_sedan_Cylinder_006.res" id="3_twio5"]
-[ext_resource type="ArrayMesh" uid="uid://c141klqt7wkc0" path="res://realistic_lowpoly_sedan_Cylinder_007.res" id="4_ojlu2"]
-[ext_resource type="ArrayMesh" uid="uid://b0ewygrfbinj0" path="res://realistic_lowpoly_sedan_Cylinder_008.res" id="5_fjqeo"]
+[ext_resource type="ArrayMesh" uid="uid://cog2xititkq8u" path="res://realistic_lowpoly_sedan_Cube.res" id="1_3bxkr"]
+[ext_resource type="ArrayMesh" uid="uid://6letl4ouw7y5" path="res://realistic_lowpoly_sedan_Cylinder_002.res" id="2_dcub4"]
+[ext_resource type="ArrayMesh" uid="uid://dc6ya3o3kepdn" path="res://realistic_lowpoly_sedan_Cylinder_006.res" id="3_twio5"]
+[ext_resource type="ArrayMesh" uid="uid://b7poqqrhtih6p" path="res://realistic_lowpoly_sedan_Cylinder_007.res" id="4_ojlu2"]
+[ext_resource type="ArrayMesh" uid="uid://dn5dk0wchv15s" path="res://realistic_lowpoly_sedan_Cylinder_008.res" id="5_fjqeo"]
 
 [node name="VehicleBody3D" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 mesh = ExtResource("1_3bxkr")
 
 [node name="VehicleWheel3D FL" type="VehicleWheel3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D FL"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 1.1912785, 0, -0.75844765)
 mesh = ExtResource("2_dcub4")
 
 [node name="VehicleWheel3D FR" type="VehicleWheel3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D FR"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1.5961692, 0, -0.73960125)
 mesh = ExtResource("3_twio5")
 
 [node name="VehicleWheel3D RL" type="VehicleWheel3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D RL"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 1.1983534, 0, 0.7620214)
 mesh = ExtResource("4_ojlu2")
 
 [node name="VehicleWheel3D RR" type="VehicleWheel3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D RR"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1.5845443, 0, 0.8208208)
 mesh = ExtResource("5_fjqeo")
 
 [node name="Node3D (SkidMarks)" type="Node3D" parent="."]
