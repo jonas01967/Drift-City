@@ -1,16 +1,15 @@
-extends Node3D
+extends Control
 
-func _ready():
+func _ready() -> void:
 	$VBoxContainer/Start.pressed.connect(_on_start_pressed)
 	$VBoxContainer/Modi.pressed.connect(_on_modi_pressed)
 	$VBoxContainer/Beenden.pressed.connect(_on_beenden_pressed)
 
-func _on_start_pressed():
-	print("Spiel starten (hier später Level laden)")
-	get_tree().change_scene_to_file("res://VehicleBody3D.tscn")
+func _on_start_pressed() -> void:
+	get_tree().change_scene_to_file("res://game.tscn")
 
-func _on_modi_pressed():
+func _on_modi_pressed() -> void:
 	get_tree().change_scene_to_file("res://mode_menu.tscn")
 
-func _on_beenden_pressed():
+func _on_beenden_pressed() -> void:
 	get_tree().quit()

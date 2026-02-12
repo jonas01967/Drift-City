@@ -1,4 +1,9 @@
-res://VehicleBody3D.tscn
 res://main_menu.tscn
 res://main_menu.gd
+res://vehicle_body_3d.gd
+res://game.tscn
+res://game.gd
+res://road_container.gd
+res://RoadSegment.tscn
+res://VehicleBody3D.tscn
 res://mode_menu.tscn
