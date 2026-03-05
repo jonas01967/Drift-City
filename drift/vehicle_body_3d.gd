@@ -1,38 +1,45 @@
 extends VehicleBody3D
 
-@export var engine_power := 1800.0
-@export var brake_power := 120.0
-@export var max_steer := 0.6
-@export var drift_slip := 2.5
-@export var normal_slip := 1.2
-
-@onready var rear_left := $RL
-@onready var rear_right := $RR
+@export var max_engine_force: float = 1500.0
+@export var max_reverse_force: float = 700.0
+@export var max_steering_angle: float = 0.5
+@export var brake_force: float = 800.0
 
 func _physics_process(delta):
-	# Gas
-	if Input.is_action_pressed("gas_vor"):
-		engine_force = engine_power
-	elif Input.is_action_pressed("gas_zurueck"):
-		engine_force = -engine_power / 2
-	else:
-		engine_force = 0
+	engine_force = 0
+	brake = 0
+	steering = 0
 
+	# Vorwärts fahren
+	if Input.is_action_pressed("ui_up"):
+		engine_force = max_engine_force
+	
+	# Rückwärts fahren
+	if Input.is_action_pressed("ui_down"):
+		engine_force = -max_reverse_force
+	
 	# Lenken
-	var steer := 0.0
-	if Input.is_action_pressed("links"):
-		steer = max_steer
-	elif Input.is_action_pressed("rechts"):
-		steer = -max_steer
+	if Input.is_action_pressed("ui_left"):
+		steering = max_steering_angle
+	if Input.is_action_pressed("ui_right"):
+		steering = -max_steering_angle
+		
 
-	steering = steer
+@export var mouse_sensitivity: float = 0.003
+@onready var spring_arm: SpringArm3D = $SpringArm3D
 
-	# Handbremse + Drift
-	if Input.is_action_pressed("handbremse"):
-		brake = brake_power
-		rear_left.wheel_friction_slip = drift_slip
-		rear_right.wheel_friction_slip = drift_slip
-	else:
-		brake = 0
-		rear_left.wheel_friction_slip = normal_slip
-		rear_right.wheel_friction_slip = normal_slip
+var camera_rotation_y: float = 0.0
+var camera_rotation_x: float = -0.3
+
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+func _input(event):
+	if event is InputEventMouseMotion:
+		camera_rotation_y -= event.relative.x * mouse_sensitivity
+		camera_rotation_x -= event.relative.y * mouse_sensitivity
+		
+		camera_rotation_x = clamp(camera_rotation_x, -1.2, -0.1)
+		
+		spring_arm.rotation.y = camera_rotation_y
+		spring_arm.rotation.x = camera_rotation_x

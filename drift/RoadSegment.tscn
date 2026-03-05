@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://rutn4b61ln5k"]
+[gd_scene format=3 uid="uid://rutn4b61ln5k"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_hs1t3"]
 size = Vector3(12, 0.2, 40)
@@ -6,10 +6,11 @@ size = Vector3(12, 0.2, 40)
 [sub_resource type="BoxShape3D" id="BoxShape3D_vejnv"]
 size = Vector3(12, 0.2, 40)
 
-[node name="RoadContainer" type="StaticBody3D"]
+[node name="RoadContainer" type="StaticBody3D" unique_id=1073381653]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2063206261]
 mesh = SubResource("BoxMesh_hs1t3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1791443418]
 shape = SubResource("BoxShape3D_vejnv")
+debug_color = Color(3.946722e-06, 0.5944424, 0.73277324, 0.41960785)

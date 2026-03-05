@@ -11,8 +11,3 @@ func _ready():
 		add_child(seg)
 		seg.position = pos
 		pos.z += segment_length
-
-# vehicle.gd
-func _process(delta):
-	var target = Vector3(0, 5, 12)
-	$SpringArm3D.transform.origin = $SpringArm3D.transform.origin.lerp(target, 5 * delta)
