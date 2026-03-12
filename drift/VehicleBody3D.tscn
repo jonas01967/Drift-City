@@ -7,10 +7,15 @@
 [ext_resource type="ArrayMesh" uid="uid://b7poqqrhtih6p" path="res://realistic_lowpoly_sedan_Cylinder_007.res" id="4_ojlu2"]
 [ext_resource type="ArrayMesh" uid="uid://dn5dk0wchv15s" path="res://realistic_lowpoly_sedan_Cylinder_008.res" id="5_fjqeo"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dcub4"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_3bxkr"]
 size = Vector3(4.5, 1.5, 2)
 
 [node name="VehicleBody3D" type="VehicleBody3D" unique_id=935786373]
+mass = 1000.0
+physics_material_override = SubResource("PhysicsMaterial_dcub4")
+engine_force = 1024.0
 script = ExtResource("1_dcub4")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=1918259991]
@@ -22,31 +27,39 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 mesh = ExtResource("1_3bxkr")
 
 [node name="VehicleWheel3D FL" type="VehicleWheel3D" parent="." unique_id=250126704]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 1.5)
 use_as_steering = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D FL" unique_id=1288176368]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1.5845443, 0, 0.8208208)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("5_fjqeo")
 
 [node name="VehicleWheel3D RL" type="VehicleWheel3D" parent="." unique_id=1378621065]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -1.5)
+engine_force = 1024.0
 use_as_traction = true
+use_as_steering = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D RL" unique_id=1192789082]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 1.1983534, 0, 0.7620214)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("4_ojlu2")
 
 [node name="VehicleWheel3D RR" type="VehicleWheel3D" parent="." unique_id=1273479824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -1.5)
+engine_force = 1024.0
 use_as_traction = true
+use_as_steering = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D RR" unique_id=737716469]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 1.1912785, 0, -0.75844765)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("2_dcub4")
 
 [node name="VehicleWheel3D FR" type="VehicleWheel3D" parent="." unique_id=886459949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 1.5)
 use_as_steering = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D FR" unique_id=1615551956]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1.5961692, 0, -0.73960125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("3_twio5")
 
 [node name="Node3D (SkidMarks)" type="Node3D" parent="." unique_id=904811419]
