@@ -31,27 +31,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 1.5)
 use_as_steering = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D FL" unique_id=1288176368]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("5_fjqeo")
 
 [node name="VehicleWheel3D RL" type="VehicleWheel3D" parent="." unique_id=1378621065]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -1.5)
 engine_force = 1024.0
 use_as_traction = true
-use_as_steering = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D RL" unique_id=1192789082]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("4_ojlu2")
 
 [node name="VehicleWheel3D RR" type="VehicleWheel3D" parent="." unique_id=1273479824]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -1.5)
 engine_force = 1024.0
 use_as_traction = true
-use_as_steering = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D RR" unique_id=737716469]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("2_dcub4")
 
 [node name="VehicleWheel3D FR" type="VehicleWheel3D" parent="." unique_id=886459949]
@@ -59,7 +54,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 1.5)
 use_as_steering = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D FR" unique_id=1615551956]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("3_twio5")
 
 [node name="Node3D (SkidMarks)" type="Node3D" parent="." unique_id=904811419]
