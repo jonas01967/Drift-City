@@ -24,4 +24,6 @@ func _spawn_vehicle() -> void:
 	vehicle = instance as VehicleBody3D   # ← KEIN var hier!
 	add_child(vehicle)
 	
-	vehicle.global_position = Vector3(0, 1, 0)
+	# Positioniere das Fahrzeug so, dass die Räder auf der Straße aufliegen.
+	# road_height ist die Höhe des Straßen-Blocks (z.B. 0.2), daher ist die Oberfläche bei road_height/2.
+	vehicle.global_position = Vector3(0, road_height / 2.0 + 1.0, 0)
