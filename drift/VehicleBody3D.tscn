@@ -13,6 +13,7 @@
 size = Vector3(4.5, 1.5, 2)
 
 [node name="VehicleBody3D" type="VehicleBody3D" unique_id=935786373]
+transform = Transform3D(-0.06585589, 0, 0.99782914, 0, 1, 0, -0.99782914, 0, -0.06585589, 0, 0, 0)
 mass = 300.0
 physics_material_override = SubResource("PhysicsMaterial_dcub4")
 engine_force = 1024.0
@@ -26,42 +27,42 @@ script = ExtResource("1_dcub4")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 mesh = ExtResource("1_3bxkr")
 
-[node name="VehicleWheel3D FL" type="VehicleWheel3D" parent="." unique_id=250126704]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, -0.5, -1)
+[node name="VehicleWheel3D FR" type="VehicleWheel3D" parent="." unique_id=250126704]
+transform = Transform3D(-4.4703484e-08, 0, -1, 0, 1, 0, 1, 0, -4.4703484e-08, -1.6020148, -0.25679046, -1.0265325)
 use_as_steering = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D FL" unique_id=1288176368]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D FR" unique_id=1288176368]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 0, 0, 0)
 mesh = ExtResource("5_fjqeo")
 
-[node name="VehicleWheel3D FR" type="VehicleWheel3D" parent="." unique_id=1378621065]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, -0.5, -1)
-use_as_steering = true
+[node name="VehicleWheel3D RR" type="VehicleWheel3D" parent="." unique_id=1378621065]
+transform = Transform3D(-4.4703484e-08, 0, -1, 0, 1, 0, 1, 0, -4.4703484e-08, 1.2, -0.25698274, -1)
+use_as_traction = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D FR" unique_id=1192789082]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D RR" unique_id=1192789082]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 0, 0, 0)
 mesh = ExtResource("3_twio5")
 
-[node name="VehicleWheel3D RL" type="VehicleWheel3D" parent="." unique_id=1273479824]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, -0.5, 1)
-use_as_traction = true
+[node name="VehicleWheel3D FL" type="VehicleWheel3D" parent="." unique_id=1273479824]
+transform = Transform3D(-4.4703484e-08, 0, -1, 0, 1, 0, 1, 0, -4.4703484e-08, -1.6020147, -0.25679046, 0.9734674)
+use_as_steering = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D RL" unique_id=737716469]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D FL" unique_id=737716469]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 0, 0, 0)
 mesh = ExtResource("4_ojlu2")
 
-[node name="VehicleWheel3D RR" type="VehicleWheel3D" parent="." unique_id=886459949]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, -0.5, 1)
+[node name="VehicleWheel3D RL" type="VehicleWheel3D" parent="." unique_id=886459949]
+transform = Transform3D(-4.4703484e-08, 0, -1, 0, 1, 0, 1, 0, -4.4703484e-08, 1.2, -0.25698274, 1)
 use_as_traction = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D RR" unique_id=1615551956]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D RL" unique_id=1615551956]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 0, 0, 0)
 mesh = ExtResource("2_dcub4")
 
 [node name="Node3D (SkidMarks)" type="Node3D" parent="." unique_id=904811419]
 
 [node name="Camera3D" type="Camera3D" parent="Node3D (SkidMarks)" unique_id=1304335758]
-transform = Transform3D(0.09216201, 0, 0.99574405, 0, 1, 0, -0.99574405, 0, 0.09216201, 5.5471463, 1.8577654, 0)
+transform = Transform3D(0.96044457, 0, 0.27847162, 0, 1, 0, -0.27847162, 0, 0.96044457, -1.3344837, 1.8523417, 6.973338)
 current = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Node3D (SkidMarks)/Camera3D" unique_id=251528422]
