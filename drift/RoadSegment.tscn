@@ -6,7 +6,7 @@ size = Vector3(12, 0.2, 40)
 [sub_resource type="BoxShape3D" id="BoxShape3D_vejnv"]
 size = Vector3(12, 0.2, 40)
 
-[node name="RoadContainer" type="StaticBody3D" unique_id=1073381653]
+[node name="RoadSegment" type="StaticBody3D" unique_id=1073381653]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2063206261]
 mesh = SubResource("BoxMesh_hs1t3")

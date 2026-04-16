@@ -1,14 +1,4 @@
-res://vehicle_body_3d.gd
-res://VehicleBody3D.tscn
-res://game.gd
-res://main_menu.gd
-res://mode_menu.gd
-res://node_3d_(skid_marks).gd
-res://realistic_lowpoly_sedan_Cube.res
-res://realistic_lowpoly_sedan_Cylinder_002.res
-res://realistic_lowpoly_sedan_Cylinder_006.res
-res://realistic_lowpoly_sedan_Cylinder_007.res
-res://realistic_lowpoly_sedan_Cylinder_008.res
-res://RoadSegment.tscn
 res://road_container.gd
+res://game.gd
+res://RoadSegment.tscn
 res://game.tscn
