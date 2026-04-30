@@ -9,10 +9,6 @@
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dcub4"]
 
-[sub_resource type="Environment" id="Environment_dcub4"]
-background_mode = 1
-background_color = Color(0, 0.60784316, 0, 1)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_3bxkr"]
 size = Vector3(4.5, 1.5, 2)
 
@@ -67,7 +63,6 @@ mesh = ExtResource("2_dcub4")
 
 [node name="Camera3D" type="Camera3D" parent="Node3D (SkidMarks)" unique_id=1304335758]
 transform = Transform3D(0.96044457, 0, 0.27847162, 0, 1, 0, -0.27847162, 0, 0.96044457, -1.3344837, 1.8523417, 6.973338)
-environment = SubResource("Environment_dcub4")
 current = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Node3D (SkidMarks)/Camera3D" unique_id=251528422]
