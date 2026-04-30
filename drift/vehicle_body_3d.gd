@@ -44,9 +44,9 @@ func _physics_process(delta):
 		brake = 0.0
 
 	# Steering input: left should be negative, right positive in Godot VehicleBody3D
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("ui_right"):
 		target_steering = -max_steering_angle
-	elif Input.is_action_pressed("ui_right"):
+	elif Input.is_action_pressed("ui_left"):
 		target_steering = max_steering_angle
 
 	# Reduce steering aggressiveness at low speed to avoid sudden jumps
