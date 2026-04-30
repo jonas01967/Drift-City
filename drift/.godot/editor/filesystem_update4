@@ -1,7 +1,4 @@
-res://game.gd
 res://road_container.gd
-res://vehicle_body_3d.gd
-res://main_menu.gd
-res://mode_menu.gd
-res://node_3d_(skid_marks).gd
+res://game.gd
 res://RoadSegment.tscn
+res://game.tscn
