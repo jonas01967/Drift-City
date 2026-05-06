@@ -16,6 +16,7 @@ shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1204190655]
 
-[node name="RoadContainer" type="StaticBody3D" parent="." unique_id=1165366097]
+[node name="RoadContainer" type="StaticBody3D" parent="." unique_id=1165366097 node_paths=PackedStringArray("vehicle")]
 script = ExtResource("2_feb5d")
 segment_scene = SubResource("PackedScene_feb5d")
+vehicle = NodePath(".")
