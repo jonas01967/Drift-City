@@ -10,9 +10,22 @@ config_version=5
 
 [application]
 
-config/name="Drift_City V2"
+config/name="drift-city V2"
+run/main_scene="uid://fiae7sptjdg0"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://cfspq8q38hi88"
+
+[editor]
+
+version_control/autoload_on_startup=true
+
+[global_group]
+
+player=""
 
 [input]
 
